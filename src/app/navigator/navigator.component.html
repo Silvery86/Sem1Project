@@ -1,72 +1,40 @@
 <div class="container">
   <div class="navigator">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand nav-link" routerLink="">Trang Chủ</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="btn-group">
-              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Danh mục sản phẩm
+    <div class="login">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+        <fa-icon [icon]="faLogin"></fa-icon>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>Đăng nhập</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
               </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" routerLink="#">KHUYÊN TAI</a></li>
-                <li><a class="dropdown-item" routerLink="#">VÒNG CỔ</a></li>
-                <li><a class="dropdown-item" routerLink="#">VÒNG TAY</a></li>
-                <li><a class="dropdown-item" routerLink="#">NHẪN (Coming soon)</a></li>
-                <li><a class="dropdown-item" routerLink="#">PHỤ KIỆN (Coming soon)</a></li>
-              </ul>
             </div>
-            <a class="nav-link" routerLink="#">Sản phẩm</a>
-            <a class="nav-link" routerLink="#">Categories</a>
-            <a class="nav-link" routerLink="aboutus">Về Chúng Tôi</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="login">
-    <!-- Button trigger modal -->
-    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-      <i class="fa-regular fa-user"></i>
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5>Đăng nhập</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form method="get" action="#">
-              <label><i class="fa-regular fa-user"></i></label>
-              <label><input type="text" name="username" placeholder="Tên đăng nhập/Số điện thoại" required/></label>
-              <br/>
-              <br/>
-              <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
-              <label><input type="password" name="your_pwd2" placeholder="Mật khẩu" required/></label>
-              <br/>
-              <br/>
-              <button type="submit">Đăng nhập</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-            <a href="https://dasmotoartandcraft-4.herokuapp.com/dangky.html#"><button type="button" class="btn btn-primary">Đăng ký</button> </a>
+            <div class="modal-body">
+              <form method="get" action="#">
+                <label><i class="fa-regular fa-user"></i></label>
+                <label><input type="text" name="username" placeholder="Tên đăng nhập/Số điện thoại" required/></label>
+                <br/>
+                <br/>
+                <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
+                <label><input type="password" name="your_pwd2" placeholder="Mật khẩu" required/></label>
+                <br/>
+                <br/>
+                <button type="submit">Đăng nhập</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+              <a href="https://dasmotoartandcraft-4.herokuapp.com/dangky.html#"><button type="button" class="btn btn-primary">Đăng ký</button> </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--CART-->
-  <a  href="#" class="cart btn" id="cart"><i class="fa-solid fa-cart-plus"></i></a>
-  <!--        END CART-->
-
+   </div>
 </div>

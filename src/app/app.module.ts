@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 const appRoute: Routes = [
   {path:'',component:HomepageComponent},
@@ -24,9 +25,11 @@ const appRoute: Routes = [
     AboutusComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(appRoute),
+    BrowserModule, RouterModule.forRoot(appRoute), FontAwesomeModule, FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

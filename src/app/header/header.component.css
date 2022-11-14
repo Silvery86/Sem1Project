@@ -1,0 +1,19 @@
+.container .logo{
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+  background-color: cornflowerblue;
+  padding: 20px;
+  height:80px;
+}
+.container .top-page{
+  width: 70%;
+  float: right;
+  box-sizing: border-box;
+  background-color: cornflowerblue;
+  padding: 25px;
+  height:80px;
+}
+.container{
+
+}
