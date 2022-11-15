@@ -1,5 +1,4 @@
 import { Component, OnInit} from '@angular/core';
-import {faShoppingCart, faUser} from "@fortawesome/free-solid-svg-icons";
 
 
 @Component({
@@ -8,8 +7,8 @@ import {faShoppingCart, faUser} from "@fortawesome/free-solid-svg-icons";
   styleUrls: ['./navigator.component.css']
 })
 export class NavigatorComponent implements OnInit {
-  faCart= faShoppingCart;
-  faLogin = faUser;
+
+
 
 
   constructor() { }

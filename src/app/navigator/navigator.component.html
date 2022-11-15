@@ -1,40 +1,86 @@
 <div class="container">
   <div class="navigator">
-    <div class="login">
-      <!-- Button trigger modal -->
-      <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-        <fa-icon [icon]="faLogin"></fa-icon>
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5>Đăng nhập</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form method="get" action="#">
-                <label><i class="fa-regular fa-user"></i></label>
-                <label><input type="text" name="username" placeholder="Tên đăng nhập/Số điện thoại" required/></label>
-                <br/>
-                <br/>
-                <label><i class="fa-sharp fa-solid fa-unlock-keyhole"></i></label>
-                <label><input type="password" name="your_pwd2" placeholder="Mật khẩu" required/></label>
-                <br/>
-                <br/>
-                <button type="submit">Đăng nhập</button>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-              <a href="https://dasmotoartandcraft-4.herokuapp.com/dangky.html#"><button type="button" class="btn btn-primary">Đăng ký</button> </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="logo">
+      <img src="assets/salecarz_logo.jpg" alt="Logo"/>
     </div>
-   </div>
+    <div>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">Home</a>
+
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            (click)="basicNavbar.toggle()"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            mdbCollapse
+            #basicNavbar="mdbCollapse"
+          >
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div ngbDropdown class="dropdown">
+                <button
+                  class="btn btn-primary dropdown-toggle bg-dark"
+                  type="button"
+                  id="dropdownMenuButton"
+                  aria-expanded="false"
+                  ngbDropdownToggle
+                >
+                  Insurance
+                </button>
+                <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a ngbDropdownItem class="dropdown-item" href="#">Action</a></li>
+                  <li><a ngbDropdownItem class="dropdown-item" href="#">Another action</a></li>
+                  <li><a ngbDropdownItem class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">ContactUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">AboutUs</a>
+              </li>
+
+            </ul>
+            <!-- Left links -->
+
+            <!-- Search form -->
+            <form class="d-flex input-group w-auto">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="button">
+                Search
+              </button>
+            </form>
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+    </div>
+  </div>
 </div>
