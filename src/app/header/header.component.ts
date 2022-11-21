@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   mailMe(){
-    this.mailText = "mailto:abc@abc.com?subject=files&body="+this.links.join(" ,");
+    this.mailText = "mailto:Salecarz@ltd.com.vn?subject=files&body="+this.links.join(" ,");
     window.location.href = this.mailText;
   }
 }

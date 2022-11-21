@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./navigator.component.css']
 })
 export class NavigatorComponent implements OnInit {
-
+  faPhone = faPhone;
 
 
 
