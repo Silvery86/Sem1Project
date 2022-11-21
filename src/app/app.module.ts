@@ -15,7 +15,7 @@ import { MdbDropdownModule } from "mdb-angular-ui-kit/dropdown";
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { BannerComponent } from './banner/banner.component';
 import {NgImageSliderModule} from "ng-image-slider";
-import { GooglemapComponent } from './googlemap/googlemap.component';
+
 
 
 const appRoute: Routes = [
@@ -35,7 +35,7 @@ const appRoute: Routes = [
     NavigatorComponent,
     AboutusComponent,
     BannerComponent,
-    GooglemapComponent
+
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoute),
