@@ -1,0 +1,21 @@
+img{
+  border-radius: 50%;
+  width:100px;
+  margin:10px;
+
+}
+.info{
+  margin:10px 0;
+
+}
+h2{
+  font-size: 25px;
+
+}
+h5{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.44);
+}
+h3{
+  font-size: 25px;
+}
