@@ -1,26 +1,28 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {RouterModule, Routes} from "@angular/router";
-import { HomepageComponent } from './homepage/homepage.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavigatorComponent } from './navigator/navigator.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
-import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {HomepageComponent} from './homepage/homepage.component';
+import {HeaderComponent} from './header/header.component';
+import {FooterComponent} from './footer/footer.component';
+import {NavigatorComponent} from './navigator/navigator.component';
+import {AboutusComponent} from './aboutus/aboutus.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {FormsModule} from "@angular/forms";
-import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
-import { MdbDropdownModule } from "mdb-angular-ui-kit/dropdown";
+import {MdbCollapseModule} from 'mdb-angular-ui-kit/collapse';
+import {MdbDropdownModule} from "mdb-angular-ui-kit/dropdown";
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
-import { BannerComponent } from './banner/banner.component';
+import {BannerComponent} from './banner/banner.component';
 import {NgImageSliderModule} from "ng-image-slider";
-
+import { SentitemsComponent } from './sentitems/sentitems.component';
+import { InboxComponent } from './inbox/inbox.component';
 
 
 const appRoute: Routes = [
   {path:'',component:HomepageComponent},
-  {path:'aboutus',component:AboutusComponent},
+  {path:'sentitems',component:SentitemsComponent},
+  {path:'inbox',component:InboxComponent},
 ]
 
 
@@ -35,6 +37,8 @@ const appRoute: Routes = [
     NavigatorComponent,
     AboutusComponent,
     BannerComponent,
+    SentitemsComponent,
+    InboxComponent,
 
   ],
   imports: [

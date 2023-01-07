@@ -1,4 +1,18 @@
-.container{
- 
-  height: 800px;
+.sliderbar li{
+  padding:10px;
+  font-size: 18px;
+
+}
+.sliderbar h2{
+  font-size: 18px;
+
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.sliderbar{
+  background-color: rgba(215, 215, 215, 0.79);
 }

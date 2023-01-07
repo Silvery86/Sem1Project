@@ -1,8 +1,25 @@
-<div class="container row">
-  <aside class="sidebar col-3">
-    <h2>Sidebar</h2>
-  </aside>
-  <article class="content col-9">
-    <h2>Main content</h2>
-  </article>
+<div class="section header row">
+  <div class="sliderbar col-4">
+    <div class="sliderbar-favourites">
+      <h2>Favourites</h2>
+      <ul>
+        <a><li class="nav-link" routerLink="inbox">Inbox</li></a>
+        <li class="nav-link" routerLink="sentitems">Sent Items</li>
+      </ul>
+
+    </div>
+    <div class="sliderbar-john">
+      <h2>John</h2>
+      <ul>
+        <li class="nav-link" routerLink="inbox">Inbox</li>
+        <li class="nav-link" routerLink="draft">Drafts</li>
+        <li class="nav-link" routerLink="deleted">Deleted Items</li>
+        <li class="nav-link" routerLink="sentitems">Sent Items</li>
+        <li class="nav-link" routerLink="outbox">Outbox</li>
+      </ul>
+    </div>
+  </div>
+  <div class="main col-8">
+    <router-outlet></router-outlet>
+  </div>
 </div>

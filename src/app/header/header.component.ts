@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {faEnvelope, faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import {
   faSquareFacebook,

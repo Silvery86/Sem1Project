@@ -1,5 +1,5 @@
-import { Component, OnInit} from '@angular/core';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import {Component, OnInit} from '@angular/core';
+import {faPhone} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
